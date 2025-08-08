@@ -1,10 +1,10 @@
 .contact{
     padding: 4rem  ;
     display: grid;
-    grid-template-columns:repeat(auto-fill,minmax(500px,1fr));
+    grid-template-columns:repeat(2,1fr);
     background-color: green;
     gap: 20px;
-}
+} 
 
 
 
@@ -18,13 +18,15 @@ form{
 form h1{
     color: green;
     font-weight: 800;
-    padding-top: 10px;
+    padding-top: 10px; 
+    text-align: center;
 }
 form p{
     color: #0f010197;
     font-weight: 500;
     padding-top: 10px;
     padding-bottom: 30px ;
+    text-align: left;
     
 }
 
@@ -67,5 +69,36 @@ textarea{
 }   
 .icon img{
     border-radius: 50%;
+
+}
+
+@media(max-width: 780px)  {
+
+/* CONTACT FORM SECTION */
+    
+    .contact{
+        display:flex;
+        flex-direction: column;
+        padding: 0.55rem;
+    }
+    .infor{
+        padding: 3rem 2rem;
+    }
+    
+    .infor-contact{
+        width: 100%;
+        
+    }
+    form{
+        display: block;
+        padding: 0.55rem;
+        
+    }
+
+    
+    
+    .img2{
+        width: 100%;
+    }
 
 }

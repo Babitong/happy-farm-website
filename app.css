@@ -15,6 +15,7 @@ body{
 
 /* NAVIGATION BAR  */
 .navbar{
+    margin: 1rem 0;
     display: flex;
     height: 40px;
     justify-content: space-between;
@@ -67,12 +68,16 @@ body{
     padding: 2rem 2rem;
     
 }
+.boxes h2{
+    text-align: center;
+    text-wrap: wrap;
+}
 
 .container1{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
-    padding: 1rem 2rem;
-    row-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 3rem;
+    row-gap: 50px;
     
        
 }
@@ -207,6 +212,8 @@ footer h2{
     
 }
 
+
+
 /* .btn:hover{
     padding: 20px;
     
@@ -222,7 +229,12 @@ footer h2{
 
  /* MEDIA QUERIES FOR SCREEN ADJUSTMENT */
 
-@media(max-width: 600px){
+@media(max-width: 780px)  {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
     /* NAVIGATION SECTION */
    
@@ -271,10 +283,14 @@ footer h2{
     .boxes .container1 {
         display:block;
         padding: 1rem 2rem;
+        margin: 0;
         /* text-align: center; */
     }
     .animation{
         padding: 20px;
+    }
+    .animation .img{
+        width: 100%;
     }
 
     /* MORE OF US SECTION */
@@ -284,60 +300,31 @@ footer h2{
     }
     
     
-    /* CONTACT FORM SECTION */
-    
-    .contact{
-        display:flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .infor{
-        padding: 3rem 2rem;
-    }
-    .infor-contact{
-        width: 100%;
-        
-    }
-    form{
-        display: block;
-        /* margin-top: 20px; */
-    }
-
-    input{
-        
-        width: 100%;
-        
-        
-    }
-    textarea{
-        
-        width: 100%;
-        
-    }
-    
-    .img2{
-        width: 100%;
         
 
         /* FOOTER SECTION */
-    }
+    
      .footer{
         display: block;
         background-color: #9cd69c;
         
     }
-    
-    
-     
+
     .btn{
     
         border-radius: 6px;
+        width: 100%;
         border:none;
         background-color: green;
-        padding:1rem 5.5rem;
+        padding:1rem 0;
         font-weight: 800;
         color: #fff; 
+        text-align: center;
         
     }
+    
+    
+     
+    
     
 }
